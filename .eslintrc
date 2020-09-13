@@ -1,0 +1,48 @@
+{
+    "env": {
+        "browser": true,
+        "es6": true
+    },
+    "extends": [
+        "eslint:recommended",
+        "plugin:react/recommended",
+        "react-app"
+    ],
+    "parserOptions": {
+        "ecmaVersion": 2018
+    },
+    "plugins": [
+        "react"
+    ],
+    "rules": {
+        "max-len": ["error", { "code": 100, "tabWidth": 2 }],
+        "space-in-parens": ["error", "never"],
+        "no-multiple-empty-lines": ["error", { "max": 1, "maxEOF": 0, "maxBOF": 0 }],
+        "no-use-before-define": "error",
+        "prefer-const": ["error", {
+            "destructuring": "any",
+            "ignoreReadBeforeAssign": false
+        }],
+        "react/prefer-es6-class": 0,
+        "react/jsx-filename-extension": 0,
+        "react/prop-types": [ 2 ],
+        "class-methods-use-this": "error",
+        "prefer-arrow-callback": "error",
+        "no-useless-constructor": "error",
+        "no-unused-vars": "error",
+        "no-undef": "error",
+        "no-undef-init": "error",
+        "no-underscore-dangle": ["error", { "allow": ["__mocks__"] }],
+        "no-return-assign": ["error", "always"],
+        "no-param-reassign": "error",
+        "no-shadow": "error", // need to check again later about the properties
+        "no-console": "off",
+        "no-cond-assign": ["error", "always"],
+        "camelcase": "error"
+    },
+    "overrides": [
+        {
+            "files": ["src/**/*.js", "src/**/*.jsx"]
+        }
+    ]
+}
